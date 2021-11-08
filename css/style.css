@@ -102,6 +102,7 @@ h6 {
 
 #jumbotron > .container {
     width: 85%;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -439,6 +440,43 @@ main > section:nth-child(4) a {
     color: #000;
     background-color: #FFF;
     text-decoration: none;
+}
 
+/* FAQ */
+.domanda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.domanda i {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.domanda:first-child {
+    border-top: 1px solid #DCDCDE;
+}
+
+.domanda {
+    cursor: pointer;
+    border-bottom: 1px solid #DCDCDE;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.domanda > span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.risposta {
+    flex-basis: 100%;
+    display: none;
+    margin-top: 15px;
+    color: rgb(149, 149, 149);
+}
+
+.domanda:hover .risposta {
+    display: block;
 }
