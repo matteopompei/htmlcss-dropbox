@@ -56,7 +56,7 @@ h6 {
     z-index: 999;
     position: fixed;
     top: 0;
-    min-width: 1300px;
+    min-width: 1200px;
     width: 100vw;
     background-color: #FFF;
     text-align: center;
@@ -313,4 +313,128 @@ main > section .fatturazione input[type="radio"]:checked {
 
 .griglia-business h3 {
     margin: 20px 0;
+}
+
+main > section:nth-child(3) a {
+    text-decoration: underline;
+}
+
+/* Team */
+main > section:nth-child(4) a {
+    color: #0061FF;
+    text-decoration: underline;
+}
+
+.griglia-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+    margin: 100px 0 0 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.griglia-team > div:nth-child(2) {
+    padding: 50px;
+    background-color: #F5F5F5;
+    flex-grow: 1;
+    width: 30%;
+    min-width: 400px;
+}
+
+.griglia-team > div:nth-child(2) .logo-team {
+    filter: invert(0);
+    height: auto;
+    width: 200px;
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.griglia-team > div:nth-child(2) hr {
+    border: 1px solid #D0D0D3;
+    width: 50px;
+}
+
+.griglia-team > div:nth-child(2) blockquote {
+    margin: 50px 0;
+}
+
+.griglia-team > div:nth-child(2) address {
+    font-style: normal;
+}
+
+.griglia-team > div:nth-child(1), .griglia-team > div:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.griglia-team > div > img {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    filter: invert(1);
+}
+
+.griglia-team > div > img[src="img/designit.svg"] {
+    background-color: #5D2C64;
+    border: 10px solid #2F1632;
+}
+
+.griglia-team > div > img[src="img/arizona_state_university.svg"] {
+    background-color: #9EF7D4;
+}
+
+.griglia-team > div > img[src="img/university_of_florida.svg"] {
+    background-color: #FF6C31;
+}
+
+.griglia-team > div > img[src="img/topps.svg"] {
+    background-color: #00E3E3;
+}
+
+.griglia-team > div > img[src="img/world_bicycle_relief.svg"] {
+    background-color: #2AFFE0;
+}
+
+.griglia-team > div > img[src="img/hearst_corp.svg"] {
+    background-color: #4B2F18;
+}
+
+.griglia-team > div > img[src="img/lonely_planet.svg"] {
+    background-color: #F2DB7E;
+}
+.griglia-team > div > img[src="img/clear_channel.svg"] {
+    background-color: #0027CF;
+}
+
+/* Prova gratuita */
+#prova {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-color: #B4D0E7;
+    padding: 150px;
+}
+
+#prova .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#prova h2 {
+    color: #61082B;
+}
+
+#prova .try-button {
+    display: block;
+    height: fit-content;
+    padding: 10px 100px;
+    color: #000;
+    background-color: #FFF;
+    text-decoration: none;
+
+
 }
