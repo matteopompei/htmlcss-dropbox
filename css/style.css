@@ -149,20 +149,29 @@ main > section > h2 {
     margin-bottom: 50px;
 }
 
-main > section > form {
+main > section .fatturazione {
     margin-bottom: 25px;
 }
 
-main > section > form > label {
+main > section .fatturazione > label {
+    cursor: pointer;
     margin-right: 25px;
 }
 
-main > section > form > input[type="radio"] {
-    width: 25px;
-    height: 15px;
-    border: 2px solid red;
-    background-color: red;
-    color: blue;
+main > section .fatturazione input[type="radio"] {
+    appearance: none;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #D0D0D3;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+main > section .fatturazione input[type="radio"]:checked {
+    background-color: #FFF;
+    box-shadow: 0 0 0 5px #0061FF inset;
 }
 
 .colonna {
