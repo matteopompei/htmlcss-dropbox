@@ -295,3 +295,22 @@ main > section .fatturazione input[type="radio"]:checked {
     color: #FFF;
 
 }
+
+/* Business */
+.griglia-business {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    row-gap: 10%;
+}
+.griglia-business div {
+    width: 30%;
+}
+
+.griglia-business img {
+    width: 100%;
+}
+
+.griglia-business h3 {
+    margin: 20px 0;
+}
