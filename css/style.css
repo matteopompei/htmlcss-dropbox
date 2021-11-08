@@ -34,7 +34,7 @@ h6 {
 }
 
 .container {
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -53,6 +53,7 @@ h6 {
 /* HEADER */
 /* Top bar */
 #top-bar {
+    z-index: 999;
     position: fixed;
     top: 0;
     min-width: 1300px;
@@ -134,13 +135,18 @@ main {
     background-color: #FFF;
 }
 
+main section {
+    padding: 100px 0;
+}
+
+
+/* Plans */
 .plans {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* Prima sezione*/
 main > section:nth-child(1) {
     padding-top: 150px;
 }
@@ -255,4 +261,37 @@ main > section .fatturazione input[type="radio"]:checked {
     top: 0;
     right: 0;
     width: 350px;
+}
+
+/* Parther */
+.partner {
+    display: flex;
+    gap: 5%;
+}
+
+.partner img {
+    width: 50%;
+}
+
+.partner h3 {
+    margin: 50px 0;
+}
+
+.partner p {
+    line-height: 2em;
+}
+
+.partner-button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: fit-content;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+
+.partner-button:hover {
+    background-color: #000;
+    color: #FFF;
+
 }
